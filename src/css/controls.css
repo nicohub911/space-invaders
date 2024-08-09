@@ -1,0 +1,88 @@
+.controls__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #181818;
+    position: relative;
+    z-index: 10;
+}
+.controls__container__shoot{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    min-width: 300px;
+    min-height: 290px;
+}
+.controls__container__shoot__F{
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls__container__movement{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    min-width: 300px;
+    min-height: 290px;
+}
+.controls__container__movement div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.controls__container__movement__defaultArrow{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+}
+.controls__container__defaultTitle{
+    font-size: 2rem;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.controls__container__button{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 5px;
+    transition: background-color 0.2s;
+}
+.controls__container__button:hover{
+    background-color: #fff;
+}
+
+.controls__container__button__link{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    transition: color 0.2s;
+}
+.controls__container__button:hover .controls__container__button__link{
+    color: #181818;
+}
